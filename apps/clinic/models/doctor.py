@@ -14,7 +14,7 @@ class Doctor(models.Model):
     birth_date = models.DateField()
     address = models.CharField(max_length=200)
     gender=models.CharField(max_length=50,choices=Gender.choices)
-    patient=models.ForeignKey('Patient',on_delete=models.CASCADE)
+    patient=models.ManyToManyField('Patient', related_name='doctors',on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag)
     def __str__(self):
         return self.name
