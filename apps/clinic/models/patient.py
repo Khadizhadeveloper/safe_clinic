@@ -11,4 +11,4 @@ class Patient(models.Model):
     gender=models.CharField(max_length=200, choices=Gender.choices)
     reason=models.CharField(max_length=300)
     date_attended=models.DateField()
-    doctors=models.ManyToManyField(Doctor)
+
