@@ -1,7 +1,9 @@
 from django.db import models
-from .doctortag import Tag
-# Create your models here.
 
+from .branch import Branch
+from .tag import Tag
+# Create your models here.
+from apps.user.models import CustomUser
 class Gender(models.TextChoices):
     MALE = 'Male','Male'
     FEMALE = 'Female','Female'
@@ -14,8 +16,11 @@ class Doctor(models.Model):
     birth_date = models.DateField()
     address = models.CharField(max_length=200)
     gender=models.CharField(max_length=50,choices=Gender.choices)
-    patient=models.ManyToManyField('Patient', related_name='doctors',on_delete=models.CASCADE)
+    patient=models.ManyToManyField('Patient', related_name='doctors',)
     tags = models.ManyToManyField(Tag)
+    branch=models.ForeignKey(Branch,on_delete=models.CASCADE)
     def __str__(self):
         return self.name
+
+
 

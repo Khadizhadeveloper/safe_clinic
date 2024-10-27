@@ -1,6 +1,6 @@
 from django.db import models
 from .doctor import Gender, Doctor
-
+from apps.user.models import CustomUser
 
 class Patient(models.Model):
     name=models.CharField(max_length=200)
@@ -11,4 +11,5 @@ class Patient(models.Model):
     gender=models.CharField(max_length=200, choices=Gender.choices)
     reason=models.CharField(max_length=300)
     date_attended=models.DateField()
+
 
