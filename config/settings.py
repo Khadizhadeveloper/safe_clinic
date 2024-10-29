@@ -27,14 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.your_email_provider.com'  # Например, smtp.gmail.com
-EMAIL_PORT = 587  # Или другой порт в зависимости от провайдера
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your_email@example.com'
-EMAIL_HOST_PASSWORD = 'your_email_password'
-DEFAULT_FROM_EMAIL = 'your_email@example.com'
-# Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -110,6 +103,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LANGUAGES = [
+    ('ky', 'Kyrgyz'),
+    ('ru', 'Russian'),
+    ('en', 'English'),
+]
+
+LANGUAGE_CODE = 'ru'  # Установи язык по умолчанию
+USE_I18N = True
+USE_L10N = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
