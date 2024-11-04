@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 21:36+0600\n"
+"POT-Creation-Date: 2024-11-04 17:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,119 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps/clinic/models/appointment.py:9
+msgid "Pending"
+msgstr "Күтүп жатат"
+
+#: apps/clinic/models/appointment.py:10
+msgid "Confirmed"
+msgstr "Тастыкталды"
+
+#: apps/clinic/models/appointment.py:11
+msgid "Cancelled"
+msgstr "Жоюлду"
+
+#: apps/clinic/models/appointment.py:14 apps/clinic/models/doctor.py:19
+msgid "Patient"
+msgstr "Пациент"
+
+#: apps/clinic/models/appointment.py:15
+msgid "Doctor"
+msgstr "Дарыгер"
+
+#: apps/clinic/models/appointment.py:16
+msgid "Date"
+msgstr "Датасы"
+
+#: apps/clinic/models/appointment.py:17
+#: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2529
+msgid "Time"
+msgstr "Убактысы"
+
+#: apps/clinic/models/appointment.py:18
+msgid "Status"
+msgstr "Статус"
+
+#: apps/clinic/models/branch.py:4 apps/clinic/models/branch.py:14
+#: apps/clinic/models/doctor.py:13 apps/clinic/models/patient.py:6
+msgid "Name"
+msgstr "Аты"
+
+#: apps/clinic/models/branch.py:5 apps/clinic/models/branch.py:15
+#: apps/clinic/models/doctor.py:17 apps/clinic/models/patient.py:8
+msgid "Address"
+msgstr "Дарек"
+
+#: apps/clinic/models/branch.py:6 apps/clinic/models/branch.py:16
+#: apps/clinic/models/doctor.py:15
+msgid "Phone"
+msgstr "Телефон"
+
+#: apps/clinic/models/branch.py:7 apps/clinic/models/doctor.py:16
+#: apps/clinic/models/patient.py:7
+msgid "Birth date"
+msgstr "Туулган дата"
+
+#: apps/clinic/models/branch.py:17
+msgid "Director"
+msgstr "Директор"
+
+#: apps/clinic/models/doctor.py:14 apps/clinic/models/patient.py:10
+msgid "Email"
+msgstr ""
+
+#: apps/clinic/models/doctor.py:18 apps/clinic/models/patient.py:11
+msgid "Gender"
+msgstr "Жыныс"
+
+#: apps/clinic/models/doctor.py:20
+msgid "Tags"
+msgstr "Тегдер"
+
+#: apps/clinic/models/doctor.py:21 apps/clinic/models/services.py:9
+msgid "Branch"
+msgstr "Филиал"
+
+#: apps/clinic/models/patient.py:9
+msgid "Phone number"
+msgstr "Телефон номери"
+
+#: apps/clinic/models/patient.py:12
+msgid "Reason"
+msgstr "Себеп"
+
+#: apps/clinic/models/patient.py:13
+msgid "Date attended"
+msgstr "Келген дата"
+
+#: apps/clinic/models/services.py:6
+msgid "Service Name"
+msgstr "Кызматтын аты"
+
+#: apps/clinic/models/services.py:7
+msgid "Description"
+msgstr "Суроттомо"
+
+#: apps/clinic/models/services.py:8
+msgid "Price"
+msgstr "Баа"
+
+#: apps/clinic/models/tag.py:5
+msgid "Role"
+msgstr "Роль"
+
+#: apps/clinic/models/tag.py:6
+msgid "Specialization"
+msgstr "Специализация"
+
+#: apps/clinic/models/tag.py:10
+msgid "Name of tag"
+msgstr "Тегтин аты"
+
+#: apps/clinic/models/tag.py:11
+msgid "Type of tag"
+msgstr "Тегдин түрү"
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
@@ -146,7 +259,6 @@ msgid_plural ""
 "Ensure this value has at least %(limit_value)d characters (it has "
 "%(show_value)d)."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:509
 #, python-format
@@ -157,27 +269,26 @@ msgid_plural ""
 "Ensure this value has at most %(limit_value)d characters (it has "
 "%(show_value)d)."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:532
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:359
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:398
+#, fuzzy
+#| msgid "Phone number"
 msgid "Enter a number."
-msgstr ""
+msgstr "Телефон номери"
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:534
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:539
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:544
 #, python-format
@@ -186,7 +297,6 @@ msgid ""
 msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:615
 #, python-format
@@ -315,8 +425,10 @@ msgid "“%(value)s” value must be a decimal number."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1698
+#, fuzzy
+#| msgid "Phone number"
 msgid "Decimal number"
-msgstr ""
+msgstr "Телефон номери"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1859
 #, python-format
@@ -326,12 +438,16 @@ msgid ""
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1863
+#, fuzzy
+#| msgid "Description"
 msgid "Duration"
-msgstr ""
+msgstr "Суроттомо"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1915
+#, fuzzy
+#| msgid "Address"
 msgid "Email address"
-msgstr ""
+msgstr "Дарек"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1940
 msgid "File path"
@@ -364,12 +480,16 @@ msgid "Small integer"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2183
+#, fuzzy
+#| msgid "Address"
 msgid "IPv4 address"
-msgstr ""
+msgstr "Дарек"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2214
+#, fuzzy
+#| msgid "Address"
 msgid "IP address"
-msgstr ""
+msgstr "Дарек"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2305
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2306
@@ -414,10 +534,6 @@ msgstr ""
 msgid ""
 "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
-msgstr ""
-
-#: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2529
-msgid "Time"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2637
@@ -491,8 +607,10 @@ msgid "This field is required."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:308
+#, fuzzy
+#| msgid "Phone number"
 msgid "Enter a whole number."
-msgstr ""
+msgstr "Телефон номери"
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:479
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:1260
@@ -535,7 +653,6 @@ msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:642
 msgid "Please either submit a file or check the clear checkbox, not both."
@@ -594,14 +711,12 @@ msgstr ""
 msgid "Please submit at most %(num)d form."
 msgid_plural "Please submit at most %(num)d forms."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:70
 #, python-format
 msgid "Please submit at least %(num)d form."
 msgid_plural "Please submit at least %(num)d forms."
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:484
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:491
@@ -688,7 +803,6 @@ msgstr ""
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/template/defaultfilters.py:922
 #, python-format
@@ -788,8 +902,10 @@ msgid "Fri"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:21
+#, fuzzy
+#| msgid "Status"
 msgid "Sat"
-msgstr ""
+msgstr "Статус"
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:22
 msgid "Sun"
@@ -836,8 +952,10 @@ msgid "October"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:35
+#, fuzzy
+#| msgid "Phone number"
 msgid "November"
-msgstr ""
+msgstr "Телефон номери"
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:36
 msgid "December"
@@ -880,8 +998,10 @@ msgid "sep"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:48
+#, fuzzy
+#| msgid "Doctor"
 msgid "oct"
-msgstr ""
+msgstr "Дарыгер"
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:49
 msgid "nov"
@@ -1002,9 +1122,11 @@ msgid "October"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:77
+#, fuzzy
+#| msgid "Phone number"
 msgctxt "alt. month"
 msgid "November"
-msgstr ""
+msgstr "Телефон номери"
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:78
 msgctxt "alt. month"
@@ -1036,42 +1158,36 @@ msgstr ""
 msgid "%(num)d year"
 msgid_plural "%(num)d years"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/utils/timesince.py:9
 #, python-format
 msgid "%(num)d month"
 msgid_plural "%(num)d months"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/utils/timesince.py:10
 #, python-format
 msgid "%(num)d week"
 msgid_plural "%(num)d weeks"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/utils/timesince.py:11
 #, python-format
 msgid "%(num)d day"
 msgid_plural "%(num)d days"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/utils/timesince.py:12
 #, python-format
 msgid "%(num)d hour"
 msgid_plural "%(num)d hours"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/utils/timesince.py:13
 #, python-format
 msgid "%(num)d minute"
 msgid_plural "%(num)d minutes"
 msgstr[0] ""
-msgstr[1] ""
 
 #: venv/lib/python3.10/site-packages/django/views/csrf.py:29
 msgid "Forbidden"
@@ -1241,3 +1357,19 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:236
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#: venv/lib/python3.10/site-packages/modeltranslation/widgets.py:32
+msgid "None"
+msgstr ""
+
+#~ msgid "Male"
+#~ msgstr "Эркек"
+
+#~ msgid "Female"
+#~ msgstr "Аял"
+
+#~ msgid "Other"
+#~ msgstr "Башка"
+
+#~ msgid "Services"
+#~ msgstr "Кызматтар"
