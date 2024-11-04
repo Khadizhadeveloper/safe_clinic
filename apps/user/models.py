@@ -14,7 +14,7 @@ class CustomUser(AbstractUser):
 
     role = models.CharField(choices=ROLE_CHOICES, max_length=50)
     phone_number = models.CharField(max_length=15)
-    birth_date = models.DateField()
+    birth_date = models.DateField(blank=True, null=True)
     email = models.EmailField(unique=True)
     is_active = models.BooleanField(default=True)
     specialization = models.ForeignKey(
